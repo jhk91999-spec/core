@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>○○중자 제작</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; }
+    header { background:#003366; color:white; padding:30px 20px; text-align:center; }
+    header h1 { margin:0; font-size:2em; }
+    nav { background:#eee; padding:10px 0; text-align:center; }
+    nav a { margin: 0 15px; text-decoration:none; color:#333; font-weight:bold; }
+    section { padding:40px 20px; max-width:1000px; margin:auto; }
+    section h2 { color:#003366; margin-bottom:20px; }
+    section img { max-width:100%; height:auto; margin-bottom:15px; display:block; }
+    footer { background:#003366; color:white; text-align:center; padding:20px; margin-top:40px; }
+    .product-list { display:flex; flex-wrap:wrap; gap:20px; }
+    .product-item { flex:1 1 calc(33% - 20px); box-shadow:0 0 5px rgba(0,0,0,0.1); padding:10px; text-align:center; }
+    button { background:#003366; color:white; border:none; padding:10px 20px; cursor:pointer; font-size:1em; margin-top:10px; }
+    button:hover { background:#0055aa; }
+    @media(max-width:1024px){ .product-item { flex:1 1 calc(50% - 20px); } }
+    @media(max-width:768px){ 
+      nav a { display:block; margin:10px 0; }
+      .product-item { flex:1 1 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>○○중자 제작</h1>
+  <p>정밀 주물 중자 전문 제작업체</p>
+</header>
+
+<nav>
+  <a href="#about">회사소개</a>
+  <a href="#product">제품소개</a>
+  <a href="#facility">설비현황</a>
+  <a href="#quality">품질관리</a>
+  <a href="#contact">문의하기</a>
+</nav>
+
+<section id="about">
+  <h2>회사소개</h2>
+  <img src="images/factory.jpg" alt="공장 전경">
+  <p>○○중자는 20년 경력의 주물 중자 제작 전문 공장으로, 자동차·조선·밸브·산업기계용 중자 제작 경험을 보유하고 있습니다. 최신 장비와 체계적인 품질관리로 고객 만족을 최우선으로 합니다.</p>
+</section>
+
+<section id="product">
+  <h2>제품소개</h2>
+  <div class="product-list">
+    <div class="product-item">
+      <img src="images/core1.jpg" alt="중자 A형">
+      <h3>중자 A형</h3>
+      <p>크기: 100~500mm<br>재질: 내열 특수 모래<br>용도: 자동차 부품</p>
+    </div>
+    <div class="product-item">
+      <img src="images/core2.jpg" alt="중자 B형">
+      <h3>중자 B형</h3>
+      <p>크기: 200~800mm<br>재질: 고강도 수지<br>용도: 조선·밸브 부품</p>
+    </div>
+    <div class="product-item">
+      <img src="images/core3.jpg" alt="중자 C형">
+      <h3>중자 C형</h3>
+      <p>특수 제작 가능, 내열성·내충격성 강화<br>맞춤형 주문 가능</p>
+    </div>
+  </div>
+</section>
+
+<section id="facility">
+  <h2>설비현황</h2>
+  <img src="images/machine.jpg" alt="주조 설비">
+  <p>중자 사출기 5대, 검사 설비 3대 보유. 자동화 시스템으로 정밀도와 생산 효율을 극대화합니다.</p>
+</section>
+
+<section id="quality">
+  <h2>품질관리 / 인증</h2>
+  <img src="images/certificate.jpg" alt="인증서">
+  <p>ISO 9001, KS 인증 취득. 모든 중자는 엄격한 검사 과정을 거쳐 납품됩니다.</p>
+</section>
+
+<section id="contact">
+  <h2>문의하기</h2>
+  <p>전화: 010-0000-0000</p>
+  <p>이메일: core@company.co.kr</p>
+  <p>견적 문의 / 샘플 요청은 아래 버튼을 클릭하세요.</p>
+  <button onclick="window.location.href='mailto:core@company.co.kr'">이메일 문의</button>
+</section>
+
+<footer>
+  <p>ⓒ 2025 ○○중자 제작. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
